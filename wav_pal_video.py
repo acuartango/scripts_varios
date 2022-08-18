@@ -4,6 +4,8 @@ import wave, struct, math, random, numpy
 from sympy import false
 import png
 
+# Based on script of @Kotxerra
+
 obj = wave.open('/home/nugbe/Descargas/HackIt2022/audioWAVvideo/data.wav','rb')
 # _wave_params(nchannels=1, sampwidth=2, framerate=8000000, nframes=1693753446, comptype='NONE', compname='not compressed')
 params=obj.getparams()
