@@ -49,7 +49,7 @@ for i in range (params.nframes // numFramesParaLeer):
                               image = numpy.zeros((alto, ancho))
                               filaImagen=0
                               columnaImagen=0
-                        # Caso de almacenar pixel en la imagen
+                        # Caso de almacenar pixel en la imagen. Se cogen solo valores superiores a 2000 que es el valor de señal buena
                         elif frame >= 2000 and filaImagen < alto-1 and columnaImagen < ancho-1:
                               image[filaImagen, columnaImagen] = frame
                               columnaImagen+=1
