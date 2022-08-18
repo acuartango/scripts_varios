@@ -70,3 +70,6 @@ obj.close()
 # - El tiempo de muestreo es de 8000000 Hz
 # - El tiempo de muestreo de la imagen es de 8000000/241 = 30000 Hz
 # - El tiempo de muestreo de la imagen es de 8000000/385 = 20000 Hz
+
+# Para automatizar el OCR (instalar tesseract e imagemagick):
+# convert  -threshold 30%  pass.png pass2.png; gwenview pass.png pass2.png ; tesseract -l eng pass2.png -
